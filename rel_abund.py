@@ -6,9 +6,9 @@ from iccpy.gadget.labels import cecilia_labels
 from iccpy.gadget.subfind import SubfindCatalogue
 from iccpy.utils import match
 
-path = '/home/luis/Documents/gecko/gecko_C/run_01/outputs'  # change between datos_Aq5 (snap127) and datos_2Mpc_LG (snap135)
+path = '/home/luis/Documents/datos_Aq5/outputs'  # change between datos_Aq5 (snap127) and datos_2Mpc_LG (snap135)
 
-snap_num = 135  # number of the snapshot to be loaded
+snap_num = 127  # number of the snapshot to be loaded
 snap = load_snapshot(directory = path, snapnum = snap_num, label_table = cecilia_labels)
 num = 0 #subhalo number (0 for main subhalo)
 cat = SubfindCatalogue(path, snap_num) # get a catalogue of subhaloes
